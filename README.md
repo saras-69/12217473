@@ -1,12 +1,16 @@
-# React + Vite
+Overview
+This React-based URL shortener application allows users to create shortened URLs with optional custom shortcodes and expiration times. Built with Material-UI for a responsive and modern interface, it supports batch processing of up to 5 URLs at once.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Multiple URL Shortening: Process up to 5 URLs simultaneously
 
-Currently, two official plugins are available:
+Custom Shortcodes: Optionally specify your own shortcode (alphanumeric, max 10 chars)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Expiration Control: Set validity period in minutes (default: 30 minutes)
 
-## Expanding the ESLint configuration
+Responsive Design: Works on mobile, tablet, and desktop devices
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Error Handling: Clear validation messages for invalid inputs
+
+Copy Functionality: One-click copy of shortened URLs
+
