@@ -26,16 +26,16 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <BrowserRouter>
-        <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', fontFamily: 'Arial, sans-serif' }}>
           <AppBar position="static" sx={{ background: 'linear-gradient(45deg, #ff8c00 30%, #ffa500 90%)' }}>
             <Toolbar>
-              <Typography variant="h6" sx={{ flexGrow: 1 }}>URL Shortener</Typography>
+              <Typography variant="h6" sx={{ flexGrow: 1, fontFamily: 'Georgia, serif' }}>URL Shortener</Typography>
             </Toolbar>
           </AppBar>
 
           <Navigation />
 
-          <Container component="main" maxWidth="xl" sx={{ mt: 2, mb: 2, flex: 1 }}>
+          <Container component="main" maxWidth="xl" sx={{ mt: 2, mb: 2, flex: 1, fontFamily: 'Roboto, sans-serif' }}>
             <Routes>
               <Route path="/" element={<Navigate to="/shorten" replace />} />
               <Route path="/shorten" element={<URLShortenerPage />} />
